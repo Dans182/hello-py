@@ -38,4 +38,9 @@ name = 35
 age = "Daniel"
 print(name)
 print(age)
-#python no tiene un tipado fuerte. Ojo.
+#python no tiene un tipado fuerte.
+
+# Forzamos el tipo
+address: str = "Mi dirección"
+address = 32
+print(type(address))
