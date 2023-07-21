@@ -41,6 +41,6 @@ print(age)
 #python no tiene un tipado fuerte.
 
 # Forzamos el tipo
-address: str = "Mi dirección"
+address: str = "Mi dirección" # esto es un tipado debil. No funciona. Tendría mas sentido en un input
 address = 32
 print(type(address))
