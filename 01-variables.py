@@ -28,8 +28,8 @@ name, surname, alias, age = "Daniel", "Gaiteiro", "dans182", 33
 print(name, surname, alias, age)
 
 # Inputs
-#name = input("What is your name: ")
-#age = input("How old are you: ")
+name = input("What is your name: ")
+age = input("How old are you: ")
 print(name)
 print(age)
 
@@ -40,7 +40,7 @@ print(name)
 print(age)
 #python no tiene un tipado fuerte.
 
-# Forzamos el tipo
+# ¿Forzamos el tipo?
 address: str = "Mi dirección" # esto es un tipado debil. No funciona. Tendría mas sentido en un input
 address = 32
 print(type(address))
