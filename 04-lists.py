@@ -29,3 +29,17 @@ print(my_other_list.count("Daniel"))
 
 # El count cuenta ocurrencias dentro de la misma lista. 
 # El len se usa para contar los elementos de una lista
+
+age, height, name, surname = my_other_list
+print(name)
+
+age, height, name, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3],
+print(name)
+
+print(my_list + my_other_list)
+
+my_list = "Hola Python"
+print(my_list)
+print(type(my_list)) #Cambio el tipo. Antes era una lista y ahora un string. Esa es la propiedad de python. Tipado dinámico
+
+my_list = ["Hola Python"] # así si sería una lista.
