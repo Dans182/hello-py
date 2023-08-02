@@ -36,10 +36,20 @@ print(b)
 # División
 
 language_slice = language[1:3]
-print(language_slice)
+print(language_slice) #yt Cuenta de index 1 a 3 sin contar el 3
 
 language_slice = language[1:]
-print(language_slice)
+print(language_slice) #ython Pilla todo a partir del index 1.
 
 language_slice = language[-2]
-print(language_slice)
+print(language_slice) #imprime o. index 0 en la P. index -1 es el ultimo caracter. index -2 es el penúltimo
+
+language_slice = language[0:6:2]
+print(language_slice) #pto. va desde index 0 al 6, de dos en dos
+
+# Reverse
+
+reversed_language = language[::-1]
+print(reversed_language)
+
+# Funciones
