@@ -22,4 +22,10 @@ print(my_other_list[0])
 print(my_other_list[1])
 print(my_other_list[-1])
 print(my_other_list[-3])
-print(my_other_list[-5])
+#print(my_other_list[-5]) #Aca peta, porque no existe ese index
+#print(my_other_list[4]) #IndexError igual
+
+print(my_other_list.count("Daniel"))
+
+# El count cuenta ocurrencias dentro de la misma lista. 
+# El len se usa para contar los elementos de una lista
