@@ -28,7 +28,7 @@ print(f"Mi nombre es {name} {surname} y mi edad es {age}")
 
 # Desempaquetado de caracteres
 
-language = "Python"
+language = "python"
 a, b, c, d, e, f = language
 print(a)
 print(b)
@@ -53,3 +53,11 @@ reversed_language = language[::-1]
 print(reversed_language)
 
 # Funciones
+
+print(language.capitalize())
+print(language.upper())
+print(language.count("t"))
+print(language.isnumeric())
+print("1".isnumeric())
+print(language.lower())
+print(language.upper().isupper())
