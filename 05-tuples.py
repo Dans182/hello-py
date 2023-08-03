@@ -48,3 +48,7 @@ print(my_tuple)
 my_tuple = tuple(my_tuple)
 print(type(my_tuple))
 print(my_tuple)
+
+del my_tuple #Aca borra directamente la variable
+#Un clear lo que hace es borrar el contenido interno de una LISTA
+#print(my_tuple)
