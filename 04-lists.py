@@ -56,12 +56,21 @@ print(my_list.pop()) # elimina el ultimo elemento
 my_list.pop()
 print(my_list)
 
-my_list.pop(2) # elimino el index del elemento que quiero desacoplar
+my_pop_element = my_list.pop(2) # elimino el index del elemento que quiero desacoplar
+print(my_list)
+print(my_pop_element)
+
+print(my_list)
+print(type(my_list)) #Cambio el tipo. Antes era una lista y ahora un string. Esa es la propiedad de python. Tipado dinámico
+
+del my_list[2] # Asi tambien borro pero index en concreto
+
+my_list.clear() # Asi borro la lista en su totalidad (el contenido)
 print(my_list)
 
 my_list = "Hola Python"
+
 print(my_list)
-print(type(my_list)) #Cambio el tipo. Antes era una lista y ahora un string. Esa es la propiedad de python. Tipado dinámico
 
 my_list = ["Hola Python"] # así si sería una lista.
 my_list = list("Hola Python")
