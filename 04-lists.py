@@ -78,6 +78,9 @@ print(my_new_list)
 my_new_list.reverse()
 print(my_new_list)
 
+my_new_list.sort()
+print(my_new_list)
+
 my_list = "Hola Python"
 
 print(my_list)
