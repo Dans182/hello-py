@@ -43,7 +43,10 @@ print(my_list + my_other_list)
 my_other_list.append("Dans182") # agrega nuevo elemento al final
 print(my_other_list)
 
-my_other_list.insert(1, "Azul") # agrega un elemento en un index que yo especifique
+my_other_list.insert(1, "Rojo") # agrega un elemento en un index que yo especifique
+print(my_other_list)
+
+my_other_list[1] = "Azul"
 print(my_other_list)
 
 my_other_list.remove("Azul") # elimino un elemento que yo especifique
@@ -64,9 +67,13 @@ print(my_list)
 print(type(my_list)) #Cambio el tipo. Antes era una lista y ahora un string. Esa es la propiedad de python. Tipado dinámico
 
 del my_list[2] # Asi tambien borro pero index en concreto
+print(my_list)
+
+my_new_list = my_list.copy()
 
 my_list.clear() # Asi borro la lista en su totalidad (el contenido)
 print(my_list)
+print(my_new_list)
 
 my_list = "Hola Python"
 
