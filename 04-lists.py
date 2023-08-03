@@ -38,8 +38,31 @@ print(name)
 
 print(my_list + my_other_list)
 
+# Funciones de las listas
+
+my_other_list.append("Dans182") # agrega nuevo elemento al final
+print(my_other_list)
+
+my_other_list.insert(1, "Azul") # agrega un elemento en un index que yo especifique
+print(my_other_list)
+
+my_other_list.remove("Azul") # elimino un elemento que yo especifique
+print(my_other_list)
+
+my_list.remove(30) # elimino el primer elemento que coincida con lo que yo le especifique
+print(my_list)
+
+print(my_list.pop()) # elimina el ultimo elemento
+my_list.pop()
+print(my_list)
+
+my_list.pop(2) # elimino el index del elemento que quiero desacoplar
+print(my_list)
+
 my_list = "Hola Python"
 print(my_list)
 print(type(my_list)) #Cambio el tipo. Antes era una lista y ahora un string. Esa es la propiedad de python. Tipado dinámico
 
 my_list = ["Hola Python"] # así si sería una lista.
+my_list = list("Hola Python")
+
