@@ -57,3 +57,6 @@ for element in my_set:
 
 for element in my_dict: #imprime las keys, no los values
     print(element)
+
+for element in my_dict.values(): #ahora asi imprime los values
+    print(element)
