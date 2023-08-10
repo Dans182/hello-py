@@ -34,3 +34,14 @@ print(my_dict)
 
 del my_dict["Calle"]
 print(my_dict)
+
+print("Gaiteiro" in my_dict) #False
+print("Apellido" in my_dict) #True Porque realmente la key y donde busca es en el Key, no en el valor
+
+
+print(my_dict.items())
+print(my_dict.keys())
+print(my_dict.values())
+
+my_new_dict = dict.fromkeys(("Nombre", 1)) #Esto me sirve para crear un nuevo directorio, con unos keys pero sin los valores
+print(my_new_dict)
