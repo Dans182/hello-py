@@ -1,4 +1,4 @@
-### Lists ###
+### Lists/Vector/Matriz ###
 
 my_list = list() #una lista es una estructura. Una forma de estructurar datos. Es lo mismo a un array o arreglo
 # No es lo mismo una lista que un arreglo como tal. Un arreglo tiene "menos operaciones" con las listas podemos hacer mas cosas.

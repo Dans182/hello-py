@@ -1,6 +1,9 @@
 ### Loops/Bucles/Ciclos ### 
 
-# While 
+## While ##
+
+print("########### WHILE ###########")
+
 
 my_condition = 0
 
@@ -24,7 +27,33 @@ print("La ejecución continúa")
 while my_condition < 20:
     my_condition += 1
     if my_condition == 15:
-        print("Mi condición es 15")
+        print("Se detiene la ejecución")
         break
-
     print(my_condition)
+
+
+
+## For ##
+print("########### BUCLÉS FOR ###########")
+
+my_list = [35, 24, 63, 53, 30, 30, 18] #Guardan información de uno en uno de forma ordenada
+my_tuple = (35, 1.77, "Daniel", "Gaiteiro", "Daniel", "Dans182") #Guardan elementos que no se pueden modificar
+my_set = {"Daniel", "Dans182", 35} #Guardan elementos, y no se pueden repetir
+my_dict = {"Nombre":"Daniel",
+                  "Apellido": "Gaiteiro", 
+                  "Edad":33,
+                  "Lenguajes": {"Javascript", "Python", "C++"},
+                    1: 1.81
+                } #Guardan elementos de forma clave-valor
+
+for element in my_list:
+    print(element)
+
+for element in my_tuple:
+    print(element)
+
+for element in my_set:
+    print(element)
+
+for element in my_dict: #imprime las keys, no los values
+    print(element)
