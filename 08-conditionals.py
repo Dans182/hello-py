@@ -20,3 +20,17 @@ else:
     print("Es menor o igual que 10")
 
 print("La ejecución continua")
+
+
+
+my_string = ""
+if my_string:
+    print("Mi cadena de texto no es vacia") #No se imprime. No se cumple. Lo da como False
+
+my_string = "Mi cadena de Texto"
+if my_string:
+    print("Mi cadena de texto no es vacia") #Se imprime. Se cumple. Lo da como True
+
+if my_string == "Mi cadena de Textoooooooo":
+    print("Estas cadenas de texto coinciden") #No se imprime. No se cumple. Lo da como False
+
