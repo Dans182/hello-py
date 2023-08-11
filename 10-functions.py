@@ -30,3 +30,23 @@ def print_name_with_default(name, surname, alias= "Sin alias"): #establecer un v
     print(f"{name} {surname} {alias}")
 
 print_name_with_default("Daniel", "Gaiteiro")
+print_name_with_default("Daniel", "Gaiteiro", "Dans182")
+
+def print_texts(*text): #al indicar el asterisco, no le doy un numero de parámetros fijo, sino dinámico. Puedo pasarle cuantos quiera y los que quiera
+    print(text)
+
+print_texts("Hola")
+
+
+def print_texts_2(*texts):
+    for text in texts:
+        print(text)
+
+print_texts_2("Hola", "Cómo estás?", "Qué haces?")
+
+
+def print_texts_3(*texts): #al indicar el asterisco, no le doy un numero de parámetros fijo, sino dinámico. Puedo pasarle cuantos quiera y los que quiera
+    for text in texts:
+        print(text.upper())
+
+print_texts_3("Hola", "Cómo estás?", "Qué haces?")
