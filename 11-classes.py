@@ -43,7 +43,7 @@ print("###################################################################")
 
 class Person2:
     def __init__(self, name, surname, alias = "Sin alias"):
-        self.full_name = f"{name} {surname} {alias}"
+        self.full_name = f"{name} {surname} ({alias})"
 
     def walk(self): #si no pongo el self, no puede acceder a fullname, porque fullname está guardado dentro de self
         print(f"{self.full_name} Está caminando")
@@ -55,3 +55,22 @@ my_person2.walk()
 my_other_person = Person2("Pedro", "Perez", "Dans182")
 print(my_other_person.full_name)
 my_other_person.walk()
+my_other_person.full_name = "Ricardo Rodríguez (El loco de los gatos)"
+print(my_other_person.full_name)
+
+
+#El constructor es para crear la instancia, para crear por PRIMERA VEZ ese objeto
+#Posteriormente puedo acceder a mi clase, acceder a una propiedad que tenga mi clase e incluso la puedo modificar.
+#Una vez creada la instancia/objeto, despuedo modificarla sin usar el constructor
+
+
+
+
+
+#Programación Orientada a Objetos
+#Crean sistema de clases y objetos
+
+#Podemos crear una clase, que sería una plantilla, en la que definimos los atributos y métodos predeterminados de un objeto, y en base a dicha clase, crear objetos que son entidades que derivan de estas clases.
+
+#Vivienda puede ser una clase, en la que definimos que debe tener paredes, suelo, techo, puertas y ventanas y cada casa que tenga dichos requisitos, será un objeto instanciado de la clase vivienda.
+#Los objetos son ejemplos de las clases
