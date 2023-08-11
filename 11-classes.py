@@ -38,9 +38,17 @@ print(f"{my_person.name} {my_person.surnameeee}")
 
 #Name y surname son PROPIEDADES de la clase
 
+print("###################################################################")
+
+
 class Person2:
     def __init__(self, name, surname):
         self.full_name = f"{my_person.name} {my_person.surnameeee}"
 
+    def walk(self): #si no pongo el self, no puede acceder a fullname, porque fullname está guardado dentro de self
+        print(f"{self.full_name} Está caminando")
+
 my_person2 = Person2("Daniel", "Gaiteiro")
 print(my_person2.full_name)
+
+my_person2.walk()
