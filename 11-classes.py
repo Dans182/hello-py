@@ -42,13 +42,16 @@ print("###################################################################")
 
 
 class Person2:
-    def __init__(self, name, surname):
-        self.full_name = f"{my_person.name} {my_person.surnameeee}"
+    def __init__(self, name, surname, alias = "Sin alias"):
+        self.full_name = f"{name} {surname} {alias}"
 
     def walk(self): #si no pongo el self, no puede acceder a fullname, porque fullname está guardado dentro de self
         print(f"{self.full_name} Está caminando")
 
 my_person2 = Person2("Daniel", "Gaiteiro")
 print(my_person2.full_name)
-
 my_person2.walk()
+
+my_other_person = Person2("Pedro", "Perez", "Dans182")
+print(my_other_person.full_name)
+my_other_person.walk()
