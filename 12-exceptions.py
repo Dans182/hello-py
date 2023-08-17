@@ -64,3 +64,11 @@ try:
     print("No se ha producido un error")
 except ValueError: #Aca especifico que la excepción actuará cuando estamos con errores del tipo ValueError. En este caso rompe, porque el error es de Type y especifico que la excepción sea para las de Value
     print("Se ha producido un error")
+
+try:
+    print(number_one + number_two)
+    print("No se ha producido un error")
+except ValueError:
+    print("Se ha producido un ValueError")
+except TypeError:
+    print("Se ha producido un TypeError")
