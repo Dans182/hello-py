@@ -68,7 +68,19 @@ except ValueError: #Aca especifico que la excepción actuará cuando estamos con
 try:
     print(number_one + number_two)
     print("No se ha producido un error")
-except ValueError:
+except ValueError: 
     print("Se ha producido un ValueError")
 except TypeError:
     print("Se ha producido un TypeError")
+
+
+print("################Captura de la información de la excepción################")
+try:
+    print(number_one + number_two)
+    print("No se ha producido un error")
+except ValueError as error: #Aca tengo una variable que captura la información del error. Antes me decía el error, pero se rompía el código. Ahora tenemos la descripción del error, pero como variable y sin que se rompa la ejecución del programa
+    print(error)
+except TypeError as error:
+    print(error)
+except Exception as error: #Excepción genérica
+    print(error)
