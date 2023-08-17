@@ -44,12 +44,16 @@ print("###################################################################")
 class Person2:
     def __init__(self, name, surname, alias = "Sin alias"):
         self.full_name = f"{name} {surname} ({alias})"
+        self.__name = name #Aca estoy definiendo esta variable como privada
+        self.__surname = surname
 
     def walk(self): #si no pongo el self, no puede acceder a fullname, porque fullname está guardado dentro de self
         print(f"{self.full_name} Está caminando")
 
 my_person2 = Person2("Daniel", "Gaiteiro")
 print(my_person2.full_name)
+# print(my_person2.__name) #Al ser una variable privada, no me la muestra, no puedo acceder a ella. Tengo que definir un getter ahora
+
 my_person2.walk()
 
 my_other_person = Person2("Pedro", "Perez", "Dans182")
@@ -74,3 +78,9 @@ print(my_other_person.full_name)
 
 #Vivienda puede ser una clase, en la que definimos que debe tener paredes, suelo, techo, puertas y ventanas y cada casa que tenga dichos requisitos, será un objeto instanciado de la clase vivienda.
 #Los objetos son ejemplos de las clases
+
+my_other_person.full_name = 666 #Tipado debil. Puedo cambiarle el tipo de dato en cualquier momento
+print(my_other_person.full_name)
+
+
+# No se puede definir que el constructor fuera solo string. Porque el tipado es dinámico.
