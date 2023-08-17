@@ -19,8 +19,13 @@ module.sum(5, 3, 9)
 module.printValue("Hola, k ase?")
 
 print("############################")
-from module import sum
+from module import sum # Acá importo funciones específicas del modulo, y no el módulo completo
 
 sum(5, 3, 9)
 
 module.printValue("Hola, k ase?")
+
+import math
+
+print(math.pi)
+print(math.pow(2,8))
