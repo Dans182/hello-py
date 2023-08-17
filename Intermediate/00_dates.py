@@ -47,6 +47,10 @@ print(diff)
 diff = year_2024.date() - current_date
 print(diff)
 
-from datetime import timedelta
+from datetime import timedelta #Nos sirve para operar con fechas y diferencias de fechas
+#Nos sirve para trabajar con franjas de fechas
+start_timedelta = timedelta(200, 100, 100, weeks = 10)
+end_timedelta = timedelta(300, 100, 100, weeks = 13)
 
-time_delta = timedelta()
+print(end_timedelta - start_timedelta)
+print(end_timedelta + start_timedelta)
