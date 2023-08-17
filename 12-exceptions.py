@@ -49,3 +49,18 @@ finally:
     #Aca se va por la excepción y ejecuta el finally.
 
 #Si hay un try, tiene que haber un except. Opcionalmente puede haber un else y un finally
+
+
+print("################EXCEPTIONS POR TIPO################")
+
+try:
+    print(number_one + number_two)
+    print("No se ha producido un error")
+except TypeError: #Aca especifico que la excepción actuará cuando estamos con errores del tipo TypeError. Pero solo actuará en esa excepción
+    print("Se ha producido un error")
+
+try:
+    print(number_one + number_two)
+    print("No se ha producido un error")
+except ValueError: #Aca especifico que la excepción actuará cuando estamos con errores del tipo ValueError. En este caso rompe, porque el error es de Type y especifico que la excepción sea para las de Value
+    print("Se ha producido un error")
