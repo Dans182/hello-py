@@ -43,9 +43,12 @@ print("###################################################################")
 
 class Person2:
     def __init__(self, name, surname, alias = "Sin alias"):
-        self.full_name = f"{name} {surname} ({alias})"
-        self.__name = name #Aca estoy definiendo esta variable como privada
-        self.__surname = surname
+        self.full_name = f"{name} {surname} ({alias})" # Propiedad Pública
+        self.__name = name #Aca estoy definiendo esta variable como privada. Propiedad Privada
+
+    def get_name (self):
+        return self.__name #Hago un getter haciendo una función con retorno. De esta manera puedo acceder al nombre, pero no puedo modificarlo
+    #Si quisiera modificarla, pues tendría que crear un setter
 
     def walk(self): #si no pongo el self, no puede acceder a fullname, porque fullname está guardado dentro de self
         print(f"{self.full_name} Está caminando")
@@ -53,6 +56,7 @@ class Person2:
 my_person2 = Person2("Daniel", "Gaiteiro")
 print(my_person2.full_name)
 # print(my_person2.__name) #Al ser una variable privada, no me la muestra, no puedo acceder a ella. Tengo que definir un getter ahora
+print("@@@@@@@@@@@@@@@@@@@@@@", my_person2.get_name())
 
 my_person2.walk()
 
