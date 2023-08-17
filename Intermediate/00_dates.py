@@ -20,26 +20,33 @@ def print_date(date):
 
 print_date(now)
 
-year_2023 = datetime(2023, 1, 1)
+year_2024 = datetime(2024, 1, 1)
 
-print(year_2023)
+print(year_2024)
 
 from datetime import time #Con esta librería basicamente rellenamos nosotros los campos de hora. En datetime lo extrae directamente de la hora local
 
-current_time = time(21, 6, 0)
+current_time = time(21, 6, 0) #Inicializamos hora
 
 print(current_time.hour)
 print(current_time.minute)
 print(current_time.second)
 
-
 from datetime import date #Con esta librería basicamente rellenamos nosotros los campos de fecha. En datetime lo extrae directamente de la hora local y agrupa hora y fecha
 
-#current_date = date(2025, 3, 31)
-current_date = date.today()
+#current_date = date(2025, 3, 31) #Inicializamos fecha
+current_date = date.today() #Aca lo inicializamos con la fecha actual
 
 print(current_date.year)
 print(current_date.month)
 print(current_date.day)
-    
 
+diff = year_2024 - now
+print(diff)
+
+diff = year_2024.date() - current_date
+print(diff)
+
+from datetime import timedelta
+
+time_delta = timedelta()
