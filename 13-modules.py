@@ -29,3 +29,7 @@ import math
 
 print(math.pi)
 print(math.pow(2,8))
+
+from math import pi as PI_VALUE #importo solo propiedades del módulo y la renombro
+
+print(PI_VALUE)
