@@ -39,3 +39,27 @@ def is_anagram(word_one, word_two):
     return sorted(word_one.lower()) == sorted(word_two.lower()) #Acá si evalua directamente si es un anagrama.
 
 print(is_anagram("Amor", "Roma"))
+
+"""
+Reto #2: LA SUCESIÓN DE FIBONACCI
+
+Escribe un programa que imprima los 50 primeros números de la sucesión
+de Fibonacci empezando en 0.
+- La serie Fibonacci se compone por una sucesión de números en
+  la que el siguiente siempre es la suma de los dos anteriores.
+  0, 1, 1, 2, 3, 5, 8, 13...
+"""
+
+def fibonacci():
+    prev = 0
+    next = 1
+
+    for i in range(0, 50):
+        print(i)
+        print(prev)
+        fib = prev + next
+        prev = next
+        next = fib
+
+
+fibonacci()
