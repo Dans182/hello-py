@@ -25,6 +25,7 @@ fizzbuzz()
 
 """
 Reto #1: ¿ES UN ANAGRAMA?
+
 Escribe una función que reciba dos palabras (String) y retorne
 verdadero o falso (Bool) según sean o no anagramas.
 - Un Anagrama consiste en formar una palabra reordenando TODAS
@@ -86,3 +87,17 @@ def is_prime():
     return True
 
 is_prime()
+
+"""
+Reto #5: ASPECT RATIO DE UNA IMAGEN
+
+Crea un programa que invierta el orden de una cadena de texto
+sin usar funciones propias del lenguaje que lo hagan de forma automática.
+Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+"""
+
+def reverse(text):
+    reversed_text = ""
+    return reversed_text
+
+print(reverse("Hola Mundo"))
