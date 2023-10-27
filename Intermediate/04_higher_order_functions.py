@@ -22,5 +22,13 @@ print(sum_two_values_and_add_value(5, 2, sum_five))
 ### Closures ###
 
 def sum_ten():
-    
-    return
+    def add(value):
+        return value + 10
+    return add
+#Aca sum ten lo que hace es retornar una funcion
+
+add_closure = sum_ten()
+print(add_closure(5))
+#El concepto de closure se puede entender como una funcion, que define otra funcion y retorna es una función
+#No retorna un valor ni un calculo. Retorna una funcion
+
