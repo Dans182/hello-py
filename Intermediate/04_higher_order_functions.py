@@ -32,3 +32,19 @@ print(add_closure(5))
 #El concepto de closure se puede entender como una funcion, que define otra funcion y retorna es una función
 #No retorna un valor ni un calculo. Retorna una funcion
 
+
+
+def sum_eleven(original_value):
+    def add(value):
+        return original_value + 19 + value
+    return add
+
+add_closure_2 = sum_eleven(1) #el 1 es el original_value
+print(add_closure_2(5)) #el 5 es el value
+
+print(sum_eleven(12)(22))
+
+
+
+### Built-in Higher order Functions ###
+
