@@ -26,3 +26,8 @@ print(type(my_typed_variable))
 # Aca lo que tiene es un tipado debil, le puedo decir que va a tener, pero no obligarle a tener un tipo de dato
 # Al intuir el tipo de dato que le digo "que tiene/tendrá", al invocar la variable tendrá la posibilidad de acceder
 # a los métodos nativos del tipo de dato
+
+# En el tipado fuerte, tu no puedes cambiar el tipo de dato
+# Python es de tipado dinámico y en estos ejemplos, el tipado es debil.
+# Pero trabajar de esta manera, ayuda al editor y a la API, en este caso FastAPI que es con lo que trabajaré
+# Nos ayuda a validar datos.
